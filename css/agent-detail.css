@@ -1,0 +1,180 @@
+.agent-detail-main {
+    min-height: calc(100vh - 120px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/backgrounds/agents-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px 40px;
+    color: white;
+    margin-top: 75px;
+    
+}
+
+.agent-details-panel {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #FF4655;
+}
+
+.agent-left-panel {
+    flex: 1;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.agent-detail-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.agent-abilities-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 70, 85, 0.2);
+}
+
+.ability-icon-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 70, 85, 0.2);
+    border: 2px solid #FF4655;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ability-icon-btn:hover {
+    background: rgba(255, 70, 85, 0.4);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+}
+
+.ability-icon-btn.active {
+    background: rgba(255, 70, 85, 0.6);
+    border-color: #FF4655;
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
+}
+
+.ability-icon-btn img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.agent-right-panel {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.agent-name {
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 2.5rem;
+    color: #FF4655;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.agent-role {
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background: #FF4655;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.agent-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #cccccc;
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 22px;
+}
+
+.ability-description-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 70, 85, 0.3);
+}
+
+.ability-title {
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 1.8rem;
+    color: #FF4655;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.ability-detail-name {
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ability-detail-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #aaaaaa;
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 22px
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .agent-detail-main {
+        padding-top: 100px;
+    }
+    
+    .agent-details-panel {
+        flex-direction: column;
+    }
+    
+    .agent-left-panel {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .agent-name {
+        font-size: 2rem;
+    }
+    
+    .agent-role {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .agent-abilities-icons {
+        gap: 10px;
+    }
+    
+    .ability-icon-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+

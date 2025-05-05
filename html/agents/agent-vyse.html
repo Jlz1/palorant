@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyse</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/agent-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="../../js/agent-detail.js"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="../home.html">
+                <img class="valo-logo" src="../../assets/navbar/valo-logo.png" alt="Valorant">
+            </a>
+            <a class="giot-button" href="../home.html">
+                <img class="giot-logo-header" src="../../assets/navbar/giot.png" alt="Giot Company">
+            </a>
+        </div>
+    
+        <div class="right-header">
+            <a class="nav-button" href="../report bug/report.html">Report Bug</a>
+            <a class="nav-button" href="../maps/maps.html">Maps</a>
+            <a class="nav-button" href="agents.html">Agents</a>
+            <a class="nav-button news" href="../news.html">News</a>
+    
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../../assets/navbar/hamburger-menu.png" alt="Menu Icon">
+            </button>
+    
+            <div class="mobile-nav">
+                <a href="../report bug/report.html">Report Bug</a>
+                <a href="../maps/maps.html">Maps</a>
+                <a href="agents.html">Agents</a>
+                <a href="../news.html">News</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="agent-detail-main">
+        <div class="agent-details-panel">
+            <div class="agent-left-panel">
+                <img src="../../assets/agents/vyse/vyse2.png" alt="Vyse" class="agent-detail-img">
+                <div class="agent-abilities-icons">
+                    <div class="ability-icon-btn active" data-ability="shockwave">
+                        <img src="../../assets/agents/vyse/vyse-ability1.png" alt="Shockwave">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="energy-burst">
+                        <img src="../../assets/agents/vyse/vyse-ability2.png" alt="Energy Burst">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="gravity-shift">
+                        <img src="../../assets/agents/vyse/vyse-ability3.png" alt="Gravity Shift">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="overcharge">
+                        <img src="../../assets/agents/vyse/vyse-ability4.png" alt="Overcharge">
+                    </div>
+                </div>
+            </div>
+
+            <div class="agent-right-panel">
+                <h2 class="agent-name">Vyse</h2>
+                <div class="agent-role">Controller</div>
+                <p class="agent-description">
+                    Vyse manipulates the forces of gravity and energy, bending the battlefield in his favor with his control over physics.
+                </p>
+
+                <div class="ability-description-container">
+                    <h3 class="ability-title">ABILITIES</h3>
+
+                    <div class="ability-detail" id="shockwave">
+                        <div class="ability-detail-name">Shear</div>
+                        <p class="ability-detail-description">
+                            Place a wall trap and shoot indestructible wall bursts from the ground to enemies.
+                        </p>
+                    </div>
+
+                    <div class="ability-detail" id="energy-burst" style="display: none">
+                        <div class="ability-detail-name">Arc Rose</div>
+                        <p class="ability-detail-description">
+                            Blind all enemies looking at the arc rose.
+                        </p>
+                    </div>
+
+                    <div class="ability-detail" id="gravity-shift" style="display: none">
+                        <div class="ability-detail-name">Razorvine</div>
+                        <p class="ability-detail-description">
+                            Invisible nest will sprawl out into a large razorvine nest which slow and damages all enemies while activated.
+                        </p>
+                    </div>
+
+                    <div class="ability-detail" id="overcharge" style="display: none">
+                        <div class="ability-detail-name">Steel Garden</div>
+                        <p class="ability-detail-description">
+                            Send metal erupting and jamming enemy primary weapon after a brief windup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+.maps-main {
+    min-height: calc(100vh - 120px);
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px 40px;
+    color: white;
+    margin-top: 75px;
+}
+
+.maps-intro-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(15, 15, 15, 0.7);
+    border-radius: 10px;
+    border: 1px solid #FF4655;
+    box-shadow: 0 4px 20px rgba(255, 70, 85, 0.2);
+}
+
+.maps-intro-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.maps-display-img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.maps-intro-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.maps-title {
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem;
+    color: #FF4655;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.maps-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dddddd;
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 22px
+}
+
+.maps-grid-container {
+    margin-bottom: 40px;
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.map-link:hover {
+    transform: translateY(-5px);
+}
+
+.map-preview {
+    position: relative;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.map-link:hover .map-preview {
+    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.6);
+    border: 2px solid #FF4655;
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.map-link:hover .map-img {
+    filter: brightness(1.1);
+}
+
+.map-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+}
+
+.map-info h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #FF4655;
+}
+
+.map-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #eeeeee;
+    font-family: Teko, Impact, Oswald, sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .maps-intro-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .maps-title {
+        font-size: 3rem;
+    }
+    
+    .maps-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .maps-main {
+        padding-top: 80px;
+    }
+    
+    .maps-title {
+        font-size: 2.5rem;
+    }
+    
+    .maps-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .maps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .maps-title {
+        font-size: 2.2rem;
+    }
+    
+    .map-preview {
+        height: 200px;
+    }
+}

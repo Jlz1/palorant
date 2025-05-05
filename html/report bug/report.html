@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bug</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/report.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="../../js/report.js"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="../home.html">
+                <img class="valo-logo" src="../../assets/navbar/valo-logo.png" alt="Valorant">
+            </a>
+            <a class="giot-button" href="../home.html">
+                <img class="giot-logo-header" src="../../assets/navbar/giot.png" alt="Giot Company">
+            </a>
+        </div>
+
+        <div class="right-header">
+            <a class="nav-button" href="report.html">Report Bug</a>
+            <a class="nav-button" href="../maps/maps.html">Maps</a>
+            <a class="nav-button" href="../agents/agents.html">Agents</a>
+            <a class="nav-button news" href="../news.html">News</a>
+
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../../assets/navbar/hamburger-menu.png" alt="Menu Icon">
+            </button>
+
+            <div class="mobile-nav">
+                <a href="report.html">Report Bug</a>
+                <a href="../maps/maps.html">Maps</a>
+                <a href="../agents/agents.html">Agents</a>
+                <a href="../news.html">News</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="report">
+        <div class="container">
+            <img src="../../assets/report-bug/report-bug-phone.png" class="bg" alt="">
+            <form class="report-bug" id="report">
+                <h1 style="color: white;">Report Bug</h1>
+                
+                <div class="input-group">
+                    <input type="text" placeholder="Username" id="inputUsername">
+                    <div class="error-msg" id="usernameError"></div>
+                </div>
+            
+                <div class="input-group">
+                    <input type="text" placeholder="Email" id="inputEmail">
+                    <div class="error-msg" id="emailError"></div>
+                </div>
+            
+                <div class="input-group">
+                    <input type="text" placeholder="Phone Number" id="inputPhone">
+                    <div class="error-msg" id="phoneError"></div>
+                </div>
+            
+                <div class="input-group">
+                    <select id="selectServer">
+                        <option value="">Select Server</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                    </select>
+                    <div class="error-msg" id="serverError"></div>
+                </div>
+            
+                <div class="input-group">
+                    <textarea placeholder="Describe the bug..." id="inputBugDesc"></textarea>
+                    <div class="error-msg" id="bugError"></div>
+                </div>
+            
+                <div class="input-group">
+                    <label style="color: white;">
+                        <input type="checkbox" id="inputUpdate"> I want to get update
+                    </label>
+                </div>
+            
+                <button class="submit-button" type="submit">Submit</button>
+            </form>            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

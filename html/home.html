@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Palorant</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet" />
+    <script src="../js/header.js"></script>
+</head>
+<body class="homepage">
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="home.html">
+                <img class="valo-logo" src="../assets/navbar/valo-logo.png" alt="Palorant" />
+            </a>
+            <a class="giot-button" href="home.html">
+                <img class="giot-logo-header" src="../assets/navbar/giot.png" alt="Giot Company" />
+            </a>
+        </div>
+
+        <div class="right-header">
+            <a class="nav-button" href="report bug/report.html">Report Bug</a>
+            <a class="nav-button" href="maps/maps.html">Maps</a>
+            <a class="nav-button" href="agents/agents.html">Agents</a>
+            <a class="nav-button news" href="news.html">News</a>
+
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../assets/navbar/hamburger-menu.png" alt="Menu Icon" />
+            </button>
+
+            <div class="mobile-nav">
+                <a href="report bug/report.html">Report Bug</a>
+                <a href="maps/maps.html">Maps</a>
+                <a href="agents/agents.html">Agents</a>
+                <a href="news.html">News</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section intro-video-section">
+            <video autoplay muted loop playsinline class="homepage-video">
+                <source src="../assets/home/homepage-video-1080.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay-text">PALORANT</div>
+        </section>
+        
+
+        <section class="section about-section">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <video autoplay muted loop playsinline>
+                        <source src="../assets/home/about-valorant.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="about-right">
+                    <h2>Palorant</h2>
+                    <p>
+                        Palorant is a strategic 5v5 hero-based shooter developed by Giot Company. Bring your skills and flair to the world stage and engage in battles with accuracy and tactics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section agents-section">
+            <div class="agent-wrapper">
+                <div class="agent-info">
+                    <h2>BEST AGENT - FADE</h2>
+                    <p>
+                        Fade is a master of information and fear, using her abilities to hunt down enemies and disrupt their plans. A top pick for gathering intel and initiating fights.
+                    </p>
+                    <ul class="agent-stats">
+                        <li>Win Rate : 53%</li>
+                        <li>Pick Rate : 29%</li>
+                        <li>Average KDA : 2.1</li>
+                    </ul>
+                    <a href="agents/agents.html" class="view-more">VIEW MORE</a>
+                </div>
+                <div class="agent-image">
+                    <img src="../assets/agents/fade/fade.png" alt="Fade" />
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

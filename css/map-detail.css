@@ -1,0 +1,49 @@
+.map-image {
+    max-width: 100%;
+    height: auto;
+    width: 70vw;
+    border-radius: 12px;
+}
+
+.map-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 2rem 0;
+}
+
+.map-image-wrapper button {
+    background-color: #FF4655;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.map-image-wrapper button:hover {
+    background-color: #ff6a80;
+}
+
+.map-image-wrapper button img {
+    width: 30px; 
+    height: 30px;
+    filter: invert(1); 
+    transition: transform 0.2s;
+}
+
+.map-image-wrapper button:hover img {
+    transform: scale(1.2); 
+}
+
+.image-counter {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}

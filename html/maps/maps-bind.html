@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bind</title>
+    <link rel="stylesheet" href="../../css/general.css"/>
+    <link rel="stylesheet" href="../../css/header.css"/>
+    <link rel="stylesheet" href="../../css/footer.css"/>
+    <link rel="stylesheet" href="../../css/map-detail.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="../../js/header.js"></script>
+    <script src="../../js/map-detail.js"></script>
+</head>
+<body data-map="bind">
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="../home.html">
+                <img class="valo-logo" src="../../assets/navbar/valo-logo.png" alt="Valorant">
+            </a>
+            <a class="giot-button" href="../home.html">
+                <img class="giot-logo-header" src="../../assets/navbar/giot.png" alt="Giot Company">
+            </a>
+        </div>
+
+        <div class="right-header">
+            <a class="nav-button" href="../report bug/report.html">Report Bug</a>
+            <a class="nav-button" href="maps.html">Maps</a>
+            <a class="nav-button" href="../agents/agents.html">Agents</a>
+            <a class="nav-button news" href="../news.html">News</a>
+
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../../assets/navbar/hamburger-menu.png" alt="Menu Icon">
+            </button>
+
+            <div class="mobile-nav">
+                <a href="../report bug/report.html">Report Bug</a>
+                <a href="maps.html">Maps</a>
+                <a href="../agents/agents.html">Agents</a>
+                <a href="../news.html">News</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="map-main">
+        <h1 class="map-title">MAP</h1>
+        <div class="map-image-wrapper">
+            <button id="prev-btn" class="map-nav-btn">
+                <img src="../../assets/arrows/left-arrow.png" alt="Previous">
+            </button>
+            <img id="bind-image" class="map-image" src="" alt="Map Image">
+            <button id="next-btn" class="map-nav-btn">
+                <img src="../../assets/arrows/right-arrow.png" alt="Next">
+            </button>
+        </div>
+        <div class="image-counter" id="bind-counter">1/3</div>
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

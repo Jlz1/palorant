@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/agent-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="../../js/agent-detail.js"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="../home.html">
+                <img class="valo-logo" src="../../assets/navbar/valo-logo.png" alt="Valorant">
+            </a>
+            <a class="giot-button" href="../home.html">
+                <img class="giot-logo-header" src="../../assets/navbar/giot.png" alt="Giot Company">
+            </a>
+        </div>
+    
+        <div class="right-header">
+            <a class="nav-button" href="../report bug/report.html">Report Bug</a>
+            <a class="nav-button" href="../maps/maps.html">Maps</a>
+            <a class="nav-button" href="agents.html">Agents</a>
+            <a class="nav-button news" href="../news.html">News</a>
+    
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../../assets/navbar/hamburger-menu.png" alt="Menu Icon">
+            </button>
+    
+            <div class="mobile-nav">
+                <a href="../report bug/report.html">Report Bug</a>
+                <a href="../maps/maps.html">Maps</a>
+                <a href="agents.html">Agents</a>
+                <a href="../news.html">News</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="agent-detail-main">
+        <div class="agent-details-panel">
+            <div class="agent-left-panel">
+                <img src="../../assets/agents/neon/neon2.png" alt="Neon" class="agent-detail-img">
+                <div class="agent-abilities-icons">
+                    <div class="ability-icon-btn active" data-ability="relay-bolt">
+                        <img src="../../assets/agents/neon/neon-ability1.png" alt="Relay Bolt">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="fast-lane">
+                        <img src="../../assets/agents/neon/neon-ability2.png" alt="Fast Lane">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="high-voltage">
+                        <img src="../../assets/agents/neon/neon-ability3.png" alt="High Voltage">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="overdrive">
+                        <img src="../../assets/agents/neon/neon-ability4.png" alt="Overdrive">
+                    </div>
+                </div>
+            </div>
+            <div class="agent-right-panel">
+                <h2 class="agent-name">Neon</h2>
+                <div class="agent-role">Duelist</div>
+                <p class="agent-description">
+                    Neon electrifies the battlefield with her speed, using her abilities to overwhelm enemies and control the tempo of every fight.
+                </p>
+                <div class="ability-description-container">
+                    <h3 class="ability-title">ABILITIES</h3>
+                    <div class="ability-detail" id="relay-bolt">
+                        <div class="ability-detail-name">Relay Bolt</div>
+                        <p class="ability-detail-description">
+                            Throw a blast that bounces off surfaces, emitting a concussive shock that stuns enemies in its path.
+                        </p>
+                    </div>
+                    <div class="ability-detail" id="fast-lane" style="display: none;">
+                        <div class="ability-detail-name">High Gear</div>
+                        <p class="ability-detail-description">
+                            Deploy two walls of electricity that extend forward, boosting movement speed for anyone in their path.
+                        </p>
+                    </div>
+                    <div class="ability-detail" id="high-voltage" style="display: none;">
+                        <div class="ability-detail-name">Fast Lane</div>
+                        <p class="ability-detail-description">
+                            Release a pulse of electricity that electrifies enemies in a line, dealing damage and briefly stunning them.
+                        </p>
+                    </div>
+                    <div class="ability-detail" id="overdrive" style="display: none;">
+                        <div class="ability-detail-name">Overdrive</div>
+                        <p class="ability-detail-description">
+                            Enter Overdrive, gaining a boost to movement speed and fire rate, allowing you to unleash rapid electric shots.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

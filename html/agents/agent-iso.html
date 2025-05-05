@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iso</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/agent-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="../../js/agent-detail.js"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-header">
+            <a class="valo-button" href="../home.html">
+                <img class="valo-logo" src="../../assets/navbar/valo-logo.png" alt="Valorant">
+            </a>
+            <a class="giot-button" href="../home.html">
+                <img class="giot-logo-header" src="../../assets/navbar/giot.png" alt="Giot Company">
+            </a>
+        </div>
+    
+        <div class="right-header">
+            <a class="nav-button" href="../report bug/report.html">Report Bug</a>
+            <a class="nav-button" href="../maps/maps.html">Maps</a>
+            <a class="nav-button" href="agents.html">Agents</a>
+            <a class="nav-button news" href="../news.html">News</a>
+    
+            <button class="hamburger-menu" aria-label="Menu">
+                <img src="../../assets/navbar/hamburger-menu.png" alt="Menu Icon">
+            </button>
+    
+            <div class="mobile-nav">
+                <a href="../report bug/report.html">Report Bug</a>
+                <a href="../maps/maps.html">Maps</a>
+                <a href="agents.html">Agents</a>
+                <a href="../news.html">News</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="agent-detail-main">
+        <div class="agent-details-panel">
+            <div class="agent-left-panel">
+                <img src="../../assets/agents/iso/iso2.png" alt="Iso" class="agent-detail-img">
+                <div class="agent-abilities-icons">
+                    <div class="ability-icon-btn active" data-ability="cryo-chains">
+                        <img src="../../assets/agents/iso/iso-ability1.png" alt="Cryo Chains">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="flash-frost">
+                        <img src="../../assets/agents/iso/iso-ability2.png" alt="Flash Frost">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="frost-wall">
+                        <img src="../../assets/agents/iso/iso-ability3.png" alt="Frost Wall">
+                    </div>
+                    <div class="ability-icon-btn" data-ability="glacial-storm">
+                        <img src="../../assets/agents/iso/iso-ability4.png" alt="Glacial Storm">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="agent-right-panel">
+                <h2 class="agent-name">Iso</h2>
+                <div class="agent-role">Controller</div>
+                <p class="agent-description">
+                    Iso harnesses the power of ice, using her abilities to control the battlefield with freezing walls and slowing enemies.
+                </p>
+                
+                <div class="ability-description-container">
+                    <h3 class="ability-title">ABILITIES</h3>
+                    
+                    <div class="ability-detail" id="cryo-chains">
+                        <div class="ability-detail-name">Undercut</div>
+                        <p class="ability-detail-description">
+                            Throw molecural orb that can pass through solid object.
+                        </p>
+                    </div>
+                    
+                    <div class="ability-detail" id="flash-frost" style="display: none;">
+                        <div class="ability-detail-name">Double Tap</div>
+                        <p class="ability-detail-description">
+                            Generate orb to the enemy you damage or killed.
+                        </p>
+                    </div>
+                    
+                    <div class="ability-detail" id="frost-wall" style="display: none;">
+                        <div class="ability-detail-name">Contigency</div>
+                        <p class="ability-detail-description">
+                            Assemble prismatic energy and push an indestructible wall.
+                        </p>
+                    </div>
+                    
+                    <div class="ability-detail" id="glacial-storm" style="display: none;">
+                        <div class="ability-detail-name">Kill Contract</div>
+                        <p class="ability-detail-description">
+                            Pull you and enemy hit into arena to duel to the death.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="middle-footer">
+            <p>Palorant and its respective logos are trademarks and/or registered trademarks of Giot Company.</p>
+            <p>@ 2025 Giot Company, all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

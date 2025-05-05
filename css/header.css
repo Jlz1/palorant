@@ -1,0 +1,140 @@
+.header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    position: fixed;
+    top: 10px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-radius: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75px;
+    z-index: 1000;
+}
+
+.header div {
+    border-radius: 12px;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+.header button,
+.header a {
+    font-size: 1.7rem;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    background: transparent;
+    transition: background-color 0.5s, color 0.3s;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header button:hover,
+.header a:hover {
+    background-color: rgb(163, 163, 163);
+    color: black;
+}
+
+.valo-logo {
+    height: 50px;
+}
+
+.giot-logo-header {
+    width: 100px;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.right-header button,
+.right-header a {
+    font-size: 1.7rem; 
+    padding: 5px 10px;
+}
+
+.right-header button:hover,
+.right-header a:hover {
+    color: #FF4655;
+}
+
+.right-header div {
+    border-radius: 0;
+}
+
+.hamburger-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.hamburger-menu img {
+    width: 32px;
+    height: 32px;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ffffff33; 
+    border-radius: 0 0 12px 12px;
+    width: 200px;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav a {
+    font-size: 1.7rem;  
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .right-header .nav-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .right-header.active .mobile-nav {
+        display: flex;
+    }
+
+    .hamburger-menu.active {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none !important;
+    }
+}

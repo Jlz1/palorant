@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../assets/report-bug/report-bug-phone.png') center;
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+}
+
+.report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px;
+    flex: 1;
+}
+
+.success-message {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.success-message h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+    padding: 16px;
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 30px !important; 
+}
+
+.submit-button:hover {
+    background-color: #e03c4a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .success-message {
+        padding: 20px;
+    }
+
+    .success-message h1 {
+        font-size: 2rem;
+    }
+
+    .success-message p {
+        font-size: 1rem;
+    }
+}
